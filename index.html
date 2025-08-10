@@ -130,5 +130,12 @@ body {
 				form.reset();
 			});
 		</script>
+
+		<script>
+			document.getElementById("scholarshipForm").addEventListener("submit", function(event) {
+				let name = document.getElementById("name").value.trim();
+				let email = document.getElemnentById("email").value.trim();
+				let course = document.getElementById("course").value.trim();
+				let score = document.getElementById("score").value.trim();
 	</body>
 </html>
