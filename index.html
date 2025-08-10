@@ -62,5 +62,14 @@
 					essay: document.getElementById('essay').value.trim(),
 					submittedAt: new Date().toISOString()
 				};
+
+				let applications = JSON.parse(localStorage.getItem('applications') || '[]');
+				applications.push(application);
+				localStorage.setItem('applications', JSON.stringify(applications));
+
+				alert("Application submitted successfully!");
+				form.reset();
+			});
+		</script>
 	</body>
 </html>
