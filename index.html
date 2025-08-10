@@ -143,5 +143,11 @@ body {
 					event.preventDefault();
 					return;
 				}
+
+				if (!email.includes("@") || !email.includes(".")) {
+					alert("please enter a valid email address.");
+					event.preventDefault();
+					return;
+				}
 	</body>
 </html>
