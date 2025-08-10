@@ -156,6 +156,15 @@ body {
 					return;
 				}
 
+				document.querySelector("form").addEventListener("submit", function(event) {
+					const name = document.querySelector("input[name='name']");
+					const email = document.querySelector("input[name='email']");
+
+					if (name.value.trim() === "" || email.value.trim() === "") {
+						alert("please fill out all required fields.");
+						event.preventDefault();
+					}
+
 				alert("Form submitted successfully!");
 			});
 		</script>
