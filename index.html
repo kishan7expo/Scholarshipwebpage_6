@@ -137,5 +137,11 @@ body {
 				let email = document.getElemnentById("email").value.trim();
 				let course = document.getElementById("course").value.trim();
 				let score = document.getElementById("score").value.trim();
+
+				if (name === "" || email === "" || course === "" || score === "") {
+					alert("Please fill in all fields before submitting.");
+					event.preventDefault();
+					return;
+				}
 	</body>
 </html>
