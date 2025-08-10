@@ -46,5 +46,10 @@
 
 				const fullName = document.getElementById('fullName').value.trim();
 				const email = document.getElementById('email').value.trim();
+
+				if(!fullName || !email) {
+					alert("Please fill in your name and email.");
+					return;
+				}
 	</body>
 </html>
