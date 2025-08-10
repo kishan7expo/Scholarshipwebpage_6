@@ -149,5 +149,11 @@ body {
 					event.preventDefault();
 					return;
 				}
+
+				if (isNaN(score) || score < 0 || score > 100) {
+					alert("please enter a valid score between 0 and 100.");
+					event.preventDefault();
+					return;
+				}
 	</body>
 </html>
