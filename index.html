@@ -38,5 +38,13 @@
 
 			<button type="submit">Submit Application</button>
 		</form>
+
+		<script>
+			const form = document.getElementById('appForm');
+			form.addEventListener('submit', function(e) {
+				e.preventDefault();
+
+				const fullName = document.getElementById('fullName').value.trim();
+				const email = document.getElementById('email').value.trim();
 	</body>
 </html>
